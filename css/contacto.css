@@ -1,0 +1,213 @@
+.contacto{
+    padding: 100px;
+    width: 100%;
+    position: relative;
+    background: #161515;
+    height: 120vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.redes_sociales .fa{
+    margin: 5px;
+    padding: 15px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.redes_sociales .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: #F6F1DB;
+}
+
+.fa-instagram{
+    background: #E1306C;
+    color: #F6F1DB;
+}
+
+.fa-whatsapp{
+    background: #128C7E;
+    color: #F6F1DB;
+}
+
+.redes_sociales h6{
+    margin-bottom: 20px;
+    color: #F6F1DB;
+    font-size: 20px;
+}
+
+.contacto button {
+    margin-bottom: 100px;
+    border-style: none;
+    background: #F87E3F;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #161515;
+    cursor: pointer;
+}
+
+.contacto button:hover{
+    background: #F6F1DB;
+}
+
+.texto_contacto{
+    padding: 50px;
+    color: #F6F1DB;
+    position: absolute;
+    width: 100%;
+}
+
+.texto_contacto h2{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+.texto_contacto p{
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.form {
+    margin-top: 200px;
+}
+
+.group {
+    margin-left: 28%;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+   }
+   
+.input {
+    color: #F6F1DB;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+   }
+   
+.input:focus {
+    outline: none;
+   }
+   
+label {
+    color: #999;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 20px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+.input:focus ~ label, .input:valid ~ label {
+    top: -15px;
+    font-size: 12px;
+    color: #F87E3F;
+   }
+   
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+   }
+   
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #F87E3F;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+.bar:before {
+    left: 50%;
+   }
+   
+.bar:after {
+    right: 50%;
+   }
+   
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+.input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+@keyframes inputHighlighter {
+    from {
+     background: #F87E3F;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
+
+   @media screen and (max-width: 680px){
+    .group {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .group {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 428px){
+    .group {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .group {
+        margin-left: 0%;
+    }
+
+    .redes_sociales .fa{
+        font-size: 15px;
+        width: 35px;
+        padding: 10px;
+    }
+}
+

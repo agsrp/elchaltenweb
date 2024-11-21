@@ -1,0 +1,82 @@
+
+.switchDark {
+    justify-content: center;
+    background: black;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 85%;
+    z-index: 1500;
+    position: fixed;
+    display: flex;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    font-size: 15px;
+  }
+
+  .switchDark span{
+    opacity: 100;
+    z-index: 1550;
+    width: 1.3em;
+    height: 1.3em;
+    color: white;
+  }
+
+  body.dark {
+    background: #0F2027;
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #081114); 
+    background: linear-gradient(to top, #2C5364, #203A43, #081114);
+
+  }
+  
+  #mont-atras.montDark{
+    opacity: 0;
+  }
+
+  #montBdark.montNoche{
+    opacity: 100;
+  }
+
+  #mont-frente.montañafrenteDia{
+    opacity: 0;
+  }
+
+  #montfrentenoche.montañafrenteDark{
+    opacity: 100;
+    z-index: 10;
+  }
+
+  #mont-frente2.montañafrenteDia2{
+    opacity: 0;
+  }
+
+  #montfrente2noche.montañafrenteDark2{
+    opacity: 100;
+  }
+
+  #estrellas.darkStars{
+    opacity: 100;
+  }
+
+  #infor.darkInfo{
+    background:  #040404;
+  }
+
+  .darkInit::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #040404, transparent);
+    z-index: 100;
+}
+
+#btn-inicio.darkBTN{
+  background-color: #F87E3F;
+}
+
+#f-inicio.initFin{
+  background: #040404;
+}
+  

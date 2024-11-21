@@ -1,0 +1,30 @@
+.info{
+    position: relative;
+    padding: 100px;
+    background: #161515;
+}
+
+.info h2{
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    color: #F6F1DB;
+}
+
+.info p{
+    font-size: 1em;
+    color: #F6F1DB;
+}
+
+/* ///// RESPONSIVE ///// */
+
+@media screen and (max-width: 580px){
+    .info {
+        padding: 75px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .info h2{
+        font-size: 2.5em;
+    }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url(inicio.css);
+@import url(info.css);
+@import url(header.css);
+@import url(dark.css);
+@import url(contacto.css);
+@import url(contacto2.css);
+@import url(comollegar.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to top, #d7dde8, #4B6CA4);
+    background: -webkit-linear-gradient(to top, #d7dde8, #4B6CA4);
+    overflow-x: hidden;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #080808;
+    height: 5vh;
+    z-index: 2000;
+}
+
+footer .copy{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #F6F1DB;
+    font-weight: 600;
+}
+
+/* ///// redes inicio ///// */
+
+.final-inicio{
+    align-items: center;
+    align-content: center;
+    height: auto;
+    text-align: center;
+    position: relative;
+    padding: 50px;
+    background: #161515;
+}
+
+.final-inicio a{
+    margin: 10px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 40px;
+    background-color: #F87E3F;
+    color: #F6F1DB;
+    font-weight: 500;
+    font-size: 1em;
+    z-index: 9;
+}
+
+.final-inicio h4{
+    padding-bottom: 50px;
+    font-size: 2em;
+    color: #F6F1DB;
+}
+
+.btn-final{
+    padding-bottom: 80px;
+}
+
+/* ///// RESPONSIVE ///// */
+
+@media screen and (max-width: 645px){
+    .final-inicio a{
+        font-size: 0.7em;
+        padding: 13px 25px;
+        font-size: 0.8em;
+        margin: 5px;
+        display: inline-flex;
+    }
+}
